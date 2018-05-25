@@ -1,0 +1,113 @@
+@font-face {
+    font-family: BigJohn;
+    src: url("../fonts/BigJohn.otf") format('otf');
+}
+
+@font-face {
+    font-family: SlimJoe;
+    src: url("../fonts/Slim+Joe.otf") format('otf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.side-padding {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+header {
+    padding-top: 30px;
+    padding-bottom: 180px;
+    text-align: center;
+    background: #3c4955 url("../img/computer.png");
+    color: white;
+}
+
+header h1 {
+    margin: 150px 0 0;
+    text-transform: uppercase;
+    font-family: BigJohn, Arial, sans-serif;
+    font-size: 46px;
+}
+
+header p {
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-family: SlimJoe, Arial, sans-serif;
+    font-size: 30px;
+}
+
+header .logo {
+    float: left;
+}
+
+header ul {
+    float: right;
+    padding-top: 50px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li span {
+    margin: 0 25px;
+}
+
+header button {
+    margin-top: 40px;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #48bf72;
+    border: 2px solid #48bf72;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+section.filters {
+    padding-top: 90px;
+    padding-bottom: 95px;
+    text-align: center;
+}
+
+section.filters ul li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section.filters ul li button {
+    padding: 5px 10px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #48545f;
+    background-color: #eaeaea;
+}
+
+section.filters ul li button:hover {
+    color: white;
+    background-color: #48bf72;
+}
