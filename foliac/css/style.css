@@ -111,3 +111,87 @@ section.filters ul li button:hover {
     color: white;
     background-color: #48bf72;
 }
+
+section.filters .filters-images {
+    margin-top: 25px;
+}
+
+section.filters .row {
+    margin-bottom: 15px;
+}
+
+section.filters .filters-images .img-wrapper {
+    position: relative;
+    margin-top: 10px;
+    float: left;
+    /*max-height: 345px;*/
+    /*overflow: hidden;*/
+    border-radius: 5px;
+}
+
+section.filters .filters-images .img-wrapper.small {
+    width: 39%;
+}
+section.filters .filters-images .img-wrapper.big {
+    width: 59%;
+}
+
+section.filters .filters-images .img-wrapper:first-child {
+    /*margin-right: 2%;*/
+}
+
+section.filters .filters-images .img-wrapper:hover .cover {
+    display: block;
+}
+
+section.filters .cover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: Lato, Arial, sans-serif;
+    color: white;
+    background-color: rgba(72, 191, 114, 0.85);
+}
+
+section.filters .cover div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+section.filters .cover h4 {
+    font-weight: bold;
+    font-size: 30px;
+}
+section.filters .cover p {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-start;
+}
+
+.flex-image {
+    display: flex;
+    width: 50%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+
+
+
