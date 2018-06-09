@@ -2,6 +2,10 @@
 @import "mixin";
 @import "normalize";
 
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
 }
@@ -17,16 +21,18 @@ ul {
 }
 
 .container {
-    max-width: 1200px;
+    width: 70%;
     margin: 0 auto;
 }
 
-.fresh-life {
+section.fresh-life {
+    $text-color: #262626;
+
+    position: relative;
     height: 100vh;
     padding-top: 55px;
-    padding-bottom: 65px;
-    background: #f9f8fb url("../img/bg-fresh-life.jpg") no-repeat;
-    background-position: center;
+    padding-bottom: 110px;
+    background: #f9f8fb url("../img/bg-fresh-life.png") no-repeat center;
     background-size: cover;
 
     h1 {
@@ -35,7 +41,7 @@ ul {
         a {
             font-family: Pacifico;
             font-size: 50px;
-            color: #262626;
+            color: $text-color;
         }
     }
 
@@ -50,33 +56,58 @@ ul {
                 font-size: 16px;
                 font-weight: bold;
                 text-transform: uppercase;
-                color: #262626;
+                color: $text-color;
             }
         }
     }
 
     .content {
         max-width: 370px;
+        font-family: Raleway, Arial, sans-serif;
+        color: $text-color;
 
         h2 {
-            font-family: Raleway, Arial, sans-serif;
             font-size: 60px;
             font-weight: 900;
-            color: #262626;
             margin-bottom: 30px;
         }
 
         p {
-            font-family: Raleway, Arial, sans-serif;
             font-size: 17px;
             font-weight: 300;
-            color: #262626;
             margin-bottom: 30px;
         }
 
         button {
-            font-family: Raleway, Arial, sans-serif;
             font-size: 20px;
         }
     }
+
+    a.scroll {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 65px;
+        display: inline-block;
+    }
 }
+
+section.about {
+    background: #00b2b2 url("../img/bg-about.png") no-repeat 15% center;
+    background-size: contain;
+    color: white;
+    padding-top: 180px;
+    padding-bottom: 235px;
+
+    .container {
+        .content {
+            float: right;
+            max-width: 500px;
+
+            h2 {
+
+            }
+        }
+    }
+}
+
