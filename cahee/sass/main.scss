@@ -448,12 +448,86 @@ section.blog {
 }
 
 section.contact {
+    padding-top: 95px;
+    padding-bottom: 115px;
+    text-align: center;
+    background: url("../img/bg-contact.jpg") no-repeat;
 
+    h2 {
+        margin-bottom: 40px;
+        font-size: 90px;
+        font-weight: bold;
+        color: $text-color-dark;
+
+        & + p {
+            margin-bottom: 45px;
+        }
+    }
+
+    p {
+        max-width: 370px;
+        margin: 0 auto;
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: 300;
+        color: $text-color-dark;
+    }
+
+    %input-element {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 0 20px;
+        font-size: 15px;
+        font-weight: bold;
+        color: $text-color-light;
+        border: none;
+        border-left: 5px solid transparent;
+        background-color: #00c3c3;
+
+        @include placeholder {
+            font-size: 15px;
+            font-weight: 300;
+            color: $text-color-light;
+        }
+
+        &:hover {
+            border-left-color: #355b81;
+        }
+    }
+
+    input {
+        @extend %input-element;
+        line-height: 50px;
+    }
+
+    textarea {
+        @extend %input-element;
+        min-height: 245px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 25px;
+        resize: none;
+    }
+
+    address {
+        text-align: left;
+        font-size: 17px;
+        line-height: 25px;
+        font-style: normal;
+        color: $text-color-dark;
+
+        b {
+            font-weight: bold;
+        }
+    }
 }
 
 footer {
     color: #b9b9b9;
     background: #252525;
+    padding-top: 35px;
+    padding-bottom: 35px;
 
     p {
         font-size: 16px;
@@ -464,8 +538,13 @@ footer {
         }
 
         &.logo {
+            text-align: center;
             font-family: Pacifico;
             font-size: 25px;
+        }
+
+        &.author {
+            text-align: right;
         }
     }
 }
