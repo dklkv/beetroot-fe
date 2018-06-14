@@ -451,7 +451,8 @@ section.contact {
     padding-top: 95px;
     padding-bottom: 115px;
     text-align: center;
-    background: url("../img/bg-contact.jpg") no-repeat;
+    background: url("../img/bg-contact.jpg") no-repeat center;
+    background-size: cover;
 
     h2 {
         margin-bottom: 40px;
