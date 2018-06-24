@@ -6,6 +6,13 @@
     display: flex;
 }
 
+@mixin flex-direction($direction) {
+    -webkit-flex-direction: $direction;
+    -moz-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
 @mixin justify-content($value: flex-start) {
     @if $value == flex-start {
         -webkit-box-pack: start;
@@ -72,6 +79,7 @@
         padding-right: $gutter;
 
         .my-grid-row{
+            @include flexbox();
             margin-left: -$gutter;
             margin-right: -$gutter;
 
@@ -80,15 +88,8 @@
             }
 
             & > [class*="my-grid-cell-"]{
-                float: left;
                 padding-left: $gutter;
                 padding-right: $gutter;
-            }
-
-            &:after {
-                content: "";
-                display: table;
-                clear: both;
             }
         }
 

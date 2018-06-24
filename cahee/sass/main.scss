@@ -26,12 +26,6 @@ img {
     max-width: 100%;
 }
 
-.clearfix:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 .container {
     width: $container-width;
     margin: 0 auto;
@@ -47,11 +41,11 @@ section.fresh-life {
     background-size: cover;
 
     nav {
-         margin-bottom: 245px;
+        margin-bottom: 245px;
+        @include flexbox();
+        @include justify-content(space-between);
 
         h1 {
-            float: left;
-
             a {
                 font-family: Pacifico;
                 font-size: 50px;
@@ -60,13 +54,12 @@ section.fresh-life {
         }
 
         ul {
-            float: right;
             margin-top: 10px;
+            @include flexbox();
 
             li {
-                display: inline-block;
                 padding-top: 7px;
-                margin-right: 35px;
+                margin-right: 38px;
                 border-top: 2px solid transparent;
 
                 &:last-child {
@@ -134,8 +127,10 @@ section.about {
     color: $text-color-light;
 
     .container {
+        @include flexbox();
+        @include flex-direction(row-reverse);
+
         .content {
-            float: right;
             max-width: 500px;
             margin-top: 165px;
             margin-bottom: 220px;
@@ -314,8 +309,11 @@ section.subscribe {
         color: $text-color-dark;
     }
 
+    form {
+        @include flexbox();
+    }
+
     input {
-        float: left;
         width: 100%;
         max-width: $text-width;
         margin-right: 30px;
@@ -334,7 +332,6 @@ section.subscribe {
     }
 
     button {
-        float: left;
         padding: 0 30px;
         font-size: 20px;
         line-height: 55px;
