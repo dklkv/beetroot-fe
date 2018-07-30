@@ -26,49 +26,48 @@
     </header>
 
     <section class="portfolio side-padding">
-        <ul>
+        <ul class="filters">
             <li>
-                <button>Tous les projets</button>
+                <button data-filter=".projects">Tous les projets</button>
             </li>
             <li>
-                <button>Webdesign</button>
+                <button data-filter=".webdesign">Webdesign</button>
             </li>
 
             <li>
-                <button>UI/UX design</button>
+                <button data-filter=".ui-ux">UI/UX design</button>
             </li>
             <li>
-                <button>Illustration</button>
+                <button data-filter=".illustration">Illustration</button>
             </li>
             <li>
-                <button>Motion design</button>
+                <button data-filter=".motion">Motion design</button>
             </li>
         </ul>
 
         <div class="portfolio-images">
-            <div class="row clearfix">
-                <div class="img-wrapper small">
-                    <img src="img/portfolio3.jpg" alt=""/>
-                    <div class="cover"></div>
-                </div>
-                <div class="img-wrapper big">
-                    <img src="img/portfolio4.jpg" alt=""/>
-                    <div class="cover"></div>
-                </div>
+            <div class="grid-sizer"></div>
+            <div class="img-wrapper projects webdesign illustration">
+                <img src="img/portfolio3.jpg" alt=""/>
+                <div class="cover"></div>
             </div>
 
-            <div class="row clearfix">
-                <div class="img-wrapper big">
-                    <img src="img/portfolio2.jpg" alt=""/>
-                    <div class="cover"></div>
-                </div>
-                <div class="img-wrapper small">
-                    <img src="img/portfolio1.jpg" alt=""/>
-                    <div class="cover">
-                        <div>
-                            <h4>Forest app</h4>
-                            <p>application mobile</p>
-                        </div>
+            <div class="img-wrapper projects illustration">
+                <img src="img/portfolio4.jpg" alt=""/>
+                <div class="cover"></div>
+            </div>
+
+            <div class="img-wrapper projects ui-ux motion">
+                <img src="img/portfolio2.jpg" alt=""/>
+                <div class="cover"></div>
+            </div>
+
+            <div class="img-wrapper projects webdesign">
+                <img src="img/portfolio1.jpg" alt=""/>
+                <div class="cover">
+                    <div>
+                        <h4>Forest app</h4>
+                        <p>application mobile</p>
                     </div>
                 </div>
             </div>
@@ -123,5 +122,11 @@
             <li><div class="hexagon behance"></div></li>
         </ul>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
