@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,17 +16,32 @@
             </div>
             <ul>
                 <li><a href="#">Accueil</a><span>/</span></li>
-                <li><a href="#">Portfolio</a><span>/</span></li>
-                <li><a href="#">About</a><span>/</span></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a><span>/</span></li>
+                <li><a href="#about">About</a><span>/</span></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>voici votre prochain portfolio</h1>
-        <p>un template psd simple et gratuit</p>
-        <button>mes travaux</button>
+
+        <div id="slider">
+            <div class="slide">
+                <h2>voici votre prochain portfolio</h2>
+                <p>un template psd simple et gratuit</p>
+                <div>
+                    <a href="#portfolio" class="button-anchor">mes travaux</a>
+                </div>
+            </div>
+            <div class="slide">
+                <h2>Second slide</h2>
+                <p>un template psd simple et gratuit</p>
+                <div>
+                    <a href="#contact" class="button-anchor">contact me</a>
+                </div>
+            </div>
+        </div>
+
     </header>
 
-    <section class="portfolio side-padding">
+    <section id="portfolio" class="portfolio side-padding">
         <ul>
             <li>
                 <button>Tous les projets</button>
@@ -75,7 +91,7 @@
         </div>
     </section>
 
-    <section class="about side-padding clearfix">
+    <section id="about" class="about side-padding clearfix">
         <div>
             <h3>Michel Dupont</h3>
             <p>Webdesigner, illustrateur, auteur</p>
@@ -86,11 +102,11 @@
                 ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
-            <button>me contacter</button>
+            <a href="#contact" class="button-anchor">me contacter</a>
         </div>
     </section>
 
-    <section class="contact side-padding">
+    <section id="contact" class="contact side-padding">
         <h3>Me Contacter</h3>
 
         <form>
@@ -123,5 +139,12 @@
             <li><div class="hexagon behance"></div></li>
         </ul>
     </footer>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
