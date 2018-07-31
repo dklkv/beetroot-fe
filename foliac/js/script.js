@@ -8,6 +8,7 @@ $(document).ready(function() {
 
     $('.portfolio .filters button').click(function () {
         var filterValue = $(this).data('filter');
+
         $isotopeGrid.isotope({
             filter: filterValue
         });

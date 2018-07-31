@@ -159,7 +159,7 @@ section.portfolio ul li button:hover {
 }
 
 section.portfolio .img-wrapper, .grid-sizer {
-    width: 50%;
+    width: 33%;
 }
 section.portfolio .img-wrapper.small {
     width: 40%;
