@@ -128,21 +128,31 @@
     <section id="contact" class="contact side-padding">
         <h3>Me Contacter</h3>
 
-        <form>
+        <form name="contact">
             <div class="row clearfix">
-                <div class="input-wrapper">
-                    <div class="input-icon user"></div>
-                    <input type="text" placeholder="Votre nom">
+                <div class="input-and-error-wrapper">
+                    <div class="input-wrapper">
+                        <div class="input-icon user"></div>
+                        <input type="text" name="name" placeholder="Votre nom" data-min="2" data-max="40">
+                    </div>
+                    <p class="error"></p>
                 </div>
-                <div class="input-wrapper">
-                    <div class="input-icon mail"></div>
-                    <input type="email" placeholder="Votre email">
+
+                <div class="input-and-error-wrapper">
+                    <div class="input-wrapper">
+                        <div class="input-icon mail"></div>
+                        <input type="email" name="email" placeholder="Votre email">
+                    </div>
+                    <p class="error"></p>
                 </div>
             </div>
 
-            <div class="row input-wrapper">
-                <div class="input-icon crayon"></div>
-                <textarea placeholder="Votre message" rows="10"></textarea>
+            <div class="row input-and-error-wrapper">
+                <div class="input-wrapper">
+                    <div class="input-icon crayon"></div>
+                    <textarea name="message" placeholder="Votre message" rows="10" data-min="5" data-max="300"></textarea>
+                </div>
+                <p class="error"></p>
             </div>
 
             <button type="submit">Envoyer</button>

@@ -273,15 +273,23 @@ section.contact form {
 }
 
 section.contact form .row{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
-section.contact form .row .input-wrapper:first-child {
+section.contact form .input-and-error-wrapper:first-child {
     float: left;
     width: 48%;
 }
-section.contact form .row .input-wrapper:last-child {
+section.contact form .input-and-error-wrapper:last-child {
     float: right;
     width: 48%;
+}
+
+section.contact form .input-and-error-wrapper .error {
+    margin: 10px 0;
+    height: 16px;
+    line-height: 16px;
+    font-size: 14px;
+    color: red;
 }
 
 section.contact .input-wrapper {
