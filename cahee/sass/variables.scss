@@ -1,5 +1,9 @@
 $container-width: 78%;
+
 $side-gap: (100% - $container-width)/2;
 
 $text-color-dark: #262626;
 $text-color-light: white;
+
+$breakpoint-lg: 1300px;
+$breakpoint-md: 950px;

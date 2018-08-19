@@ -424,6 +424,13 @@ footer .hexagon.dribble:after {
     border-top-color: #e94b89;
 }
 
+@media all and (max-width: 1100px) {
+    .side-padding {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
 
 
 
