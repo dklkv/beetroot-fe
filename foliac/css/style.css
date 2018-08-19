@@ -137,18 +137,18 @@ header .slide {
 */
 
 section.portfolio {
-    padding-top: 90px;
+    padding-top: 80px;
     padding-bottom: 95px;
     text-align: center;
 }
 
 section.portfolio ul {
+    margin-top: 10px;
     margin-bottom: 50px;
 }
 section.portfolio ul li {
     display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px 10px;
 }
 section.portfolio ul li button {
     padding: 5px 10px;
@@ -210,7 +210,7 @@ section.portfolio .img-wrapper .cover p {
 section.about {
     padding-top: 85px;
     padding-bottom: 85px;
-    background: #3c4955 url('../img/men-computer.png');
+    background: #3c4955 url('../img/men-computer.png') no-repeat;
     background-position-x: 50%;
     background-position-y: 45%;
     color: white;
@@ -428,6 +428,41 @@ footer .hexagon.dribble:after {
     .side-padding {
         padding-left: 5%;
         padding-right: 5%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    section.about {
+        background-position-x: 25%;
+    }
+
+    section.about a.button-anchor {
+        color: #48bf72;
+        border-color: #48bf72;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer p {
+        float: none;
+    }
+
+    footer ul {
+        float: none;
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    section.contact form .input-and-error-wrapper:first-child {
+        float: none;
+        width: 100%;
+    }
+    section.contact form .input-and-error-wrapper:last-child {
+        float: none;
+        width: 100%;
     }
 }
 
