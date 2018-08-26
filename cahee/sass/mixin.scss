@@ -77,12 +77,12 @@
     flex-direction: $value;
 }
 
-@mixin placeholder {
-    &::-webkit-input-placeholder {@content}
-    &:-moz-placeholder           {@content}
-    &::-moz-placeholder          {@content}
-    &:-ms-input-placeholder      {@content}
-}
+//@mixin placeholder {
+//    &::-webkit-input-placeholder {@content}
+//    &:-moz-placeholder           {@content}
+//    &::-moz-placeholder          {@content}
+//    &:-ms-input-placeholder      {@content}
+//}
 
 @mixin grid($gutter: 10px) {
     $vertical-gutter: 2 * $gutter;

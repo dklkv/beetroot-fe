@@ -63,6 +63,12 @@ $(document).ready(function () {
         }
     });
 
+    $('.menu-button').click(function (e) {
+        var target = e.target;
+        var menuId = $(target).data('menu-id');
+        $(menuId).toggle();
+    });
+
     function validateText(input) {
         var min = input.dataset.min,
             max = input.dataset.max,

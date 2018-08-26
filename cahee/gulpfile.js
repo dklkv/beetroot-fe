@@ -3,9 +3,11 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     rename = require('gulp-rename'),
     notify = require('gulp-notify'),
-    // uglify = require('gulp-uglify'),
+    uglify = require('gulp-uglify'),
     watch = require('gulp-watch'),
     imagemin = require('gulp-imagemin'),
+    sourcemaps = require('gulp-sourcemaps'),
+    autoprefixer = require('gulp-autoprefixer'),
     bs = require('browser-sync').create();
 
 gulp.task('default', ['browsersync', 'watch']);
@@ -19,15 +21,18 @@ gulp.task('browsersync', function () {
 
 gulp.task('watch', function() {
     gulp.watch('sass/**/*.scss', ['style']);
-    // gulp.watch('src/js/script.js', ['script']);
+    gulp.watch('src/js/script.js', ['script']);
     bs.watch('*.html').on('change', bs.reload);
 });
 
 gulp.task('style', function() {
     return gulp.src('sass/main.scss', {style : 'expended'})
+        .pipe(sourcemaps.init())
         .pipe(sass({includePaths: ['sass/**']}))
+        .pipe(autoprefixer())
         .pipe(rename({suffix: '.min'}))
         .pipe(minify())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('css/'))
         .pipe(notify({message: 'Style task is finished'}))
         .pipe(bs.reload({stream: true}));

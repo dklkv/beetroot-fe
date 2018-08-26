@@ -132,6 +132,28 @@ header .slide {
     padding: 30px;
 }
 
+.menu-button {
+    display: none;
+    width: 60px;
+    padding: 7px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.menu-button span {
+    display: inline-block;
+    height: 1px;
+    background-color: white;
+    margin: 5px 0;
+    width: 80%;
+    font-size: 0;
+    line-height: 0;
+}
+
 /**
 * Section portfolio
 */
@@ -432,6 +454,34 @@ footer .hexagon.dribble:after {
 }
 
 @media all and (max-width: 768px) {
+    .menu-button {
+        display: inline-block;
+        float: right;
+    }
+
+    header nav {
+        position: relative;
+    }
+
+    header nav ul {
+        display: none;
+        position: absolute;
+        float: none;
+        top: 70px;
+        width: 100%;
+        padding-top: 0;
+        background-color: rgba(72,191,114, 0.3);
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    header nav ul li span {
+        display: none;
+    }
+
     section.about {
         background-position-x: 25%;
     }

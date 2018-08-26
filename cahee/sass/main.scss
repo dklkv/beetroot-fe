@@ -328,10 +328,10 @@ section.subscribe {
         border: 1px solid #252525;
         line-height: 53px;
 
-        @include placeholder {
+        &::placeholder {
             font-size: 15px;
             font-weight: 300;
-            color: $text-color-dark;
+            color: green;
         }
     }
 
@@ -496,7 +496,7 @@ section.contact {
         border-left: 5px solid transparent;
         background-color: #00c3c3;
 
-        @include placeholder {
+        &::placeholder {
             font-size: 15px;
             font-weight: 300;
             color: $text-color-light;
