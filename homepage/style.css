@@ -1,0 +1,51 @@
+.container-fluid {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+header {
+    background: url("img/background.jpg") center bottom no-repeat;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-brand {
+    font-family: Montserrat, Arial;
+}
+
+.header-wrapper {
+    margin: 165px auto 125px;
+    max-width: 555px;
+    color: #60606e;
+}
+.header-wrapper p:first-child {
+    display: inline-block;
+    font-family: Montserrat, Arial;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 2px 14px;
+    background-color: #7bedc7;
+}
+
+.header-wrapper h1 {
+    font-family: Montserrat, Arial;
+    font-weight: bold;
+    font-size: 48px;
+    margin: 0 0 30px;
+    padding: 14px 0;
+    border: 10px solid #60606e;
+}
+
+.header-wrapper p:last-of-type {
+    font-family: "Open Sans", Arial;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
