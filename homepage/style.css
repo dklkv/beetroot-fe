@@ -1,12 +1,24 @@
-.container-fluid {
-    margin: 0 auto;
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #60606e;
+}
+
+h1, h2, h3, h4, button, .navbar-brand {
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.max-width {
     max-width: 1140px;
+    margin: 0 auto;
 }
 
 .btn-green {
     color: white;
     background-color: #7bedc7;
     border-radius: 0;
+    padding: 14px 40px;
 }
 
 .btn-inverse {
@@ -21,6 +33,10 @@
 
 .btn-inverse:focus, .btn-inverse:hover {
     color: #7bedc7;
+}
+
+.text-inverse {
+    color: white;
 }
 
 .img-responsive {
@@ -50,25 +66,30 @@
 
 h2 {
     display: inline-block;
-    text-transform: uppercase;
-    font-family: Montserrat;
-    font-weight: bold;
     font-size: 30px;
-    color: #60606e;
 }
 .header-container {
     text-align: center;
 }
 .header-container p {
-    margin: 0 auto;
+    margin: 0 auto 105px;
     max-width: 515px;
-    font-family: "Open Sans";
     font-size: 14px;
     color: #60606e;
 }
 
 header {
-    background: url("img/background.jpg") center bottom no-repeat;
+    background: url("img/background.png") center bottom no-repeat;
+    background-size: cover;
+}
+
+header p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+header img.margin-negative {
+    margin-bottom: -100px;
 }
 
 .navbar-default {
@@ -76,19 +97,12 @@ header {
     border: none;
 }
 
-.navbar-brand {
-    font-family: Montserrat, Arial;
-}
-
 .header-wrapper {
     margin: 165px auto 125px;
     max-width: 555px;
-    color: #60606e;
 }
 .header-wrapper p:first-child {
     display: inline-block;
-    font-family: Montserrat, Arial;
-    font-weight: bold;
     font-size: 18px;
     margin-bottom: 0;
     padding: 2px 14px;
@@ -96,8 +110,6 @@ header {
 }
 
 .header-wrapper h1 {
-    font-family: Montserrat, Arial;
-    font-weight: bold;
     font-size: 48px;
     margin: 0 0 30px;
     padding: 14px 0;
@@ -105,7 +117,6 @@ header {
 }
 
 .header-wrapper p:last-of-type {
-    font-family: "Open Sans", Arial;
     font-weight: normal;
     font-size: 16px;
 }
@@ -113,8 +124,27 @@ header {
 
 header .btn-absolute {
     position: absolute;
-    bottom: 80px;
+    bottom: -25px;
     right: 0;
+}
+
+#chooseUs {
+    padding-top: 145px;
+}
+
+#chooseUs i {
+    font-size: 36px;
+}
+
+#chooseUs li {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#portfolio {
+    padding: 150px 0;
 }
 
 #portfolio .filter-menu li {
@@ -122,14 +152,68 @@ header .btn-absolute {
 }
 #portfolio .filter-menu li span {
     display: inline-block;
-    font-family: Montserrat;
-    font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
-    color: #60606e;
     padding: 5px 15px;
 }
 #portfolio .filter-menu li.active span {
     color: white;
     background-color: #7bedc7;
+}
+
+#contact {
+    padding: 50px 0;
+    background-color: #7bedc7;
+}
+
+#contact h2 {
+    line-height: 48px;
+}
+
+#contact h3 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+#contact .white-bg {
+    background-color: white;
+    padding: 20px 15px;
+}
+
+#contact .form-control {
+    height: 50px;
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #9a9a9a;
+    text-transform: uppercase;
+}
+
+footer a {
+    color: #9a9a9a;
+}
+
+footer .list-inline > li {
+    padding-right: 0;
+}
+
+footer .bottom-menu li {
+    padding-left: 0;
+}
+
+footer .bottom-menu li:after {
+    content: "-";
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+footer .bottom-menu li:last-of-type:after {
+    content: "";
+}
+
+footer i {
+    font-size: 18px;
 }
