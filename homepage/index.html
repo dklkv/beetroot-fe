@@ -24,9 +24,9 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Choose us</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#chooseUs">Choose us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +42,9 @@
         <div class="container-fluid max-width">
             <div class="row relative">
                 <div class="col-md-5">
-                    <img class="img-responsive margin-negative" src="img/header_image.jpg" alt="">
+                    <div class="img-wrapper">
+                        <img class="img-responsive" src="img/header_image.jpg" alt="">
+                    </div>
                 </div>
                 <div class="col-md-6 col-md-offset-1">
                     <h2 class="green-underline">HISTORY OF AGENCY</h2>
@@ -52,22 +54,28 @@
                         Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
                         ut aliquid ex ea commodi modi tempora incidunt ut labore.
                     </p>
+                    <p class="collapse" id="historyReadMe">Additional "Read me" text</p>
+                    <div class="btn-wrapper">
+                        <button class="btn btn-green text-uppercase" type="button" data-toggle="collapse" data-target="#historyReadMe">
+                            Read more
+                        </button>
+                    </div>
                 </div>
-                <button class="btn btn-green text-uppercase btn-absolute">Read more</button>
             </div>
         </div>
     </header>
 
-        <section id="chooseUs" class="container-fluid max-width">
-            <div class="header-container">
-                <h2 class="green-underline">Why choose us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+    <section id="chooseUs" class="container-fluid max-width">
+        <div class="header-container">
+            <h2 class="green-underline">Why choose us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-sm-6">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6 text-xs-center">
+                        <div class="column-wrapper">
                             <i class="ion-ios-infinite-outline"></i>
                             <h4>unlimited options</h4>
                             <ul class="list-unstyled">
@@ -77,7 +85,9 @@
                                 <li>User Experience</li>
                             </ul>
                         </div>
-                        <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6 text-xs-center">
+                        <div class="column-wrapper">
                             <i class="ion-ios-shuffle"></i>
                             <h4>DESIGN & DEVELOPMENT</h4>
                             <ul class="list-unstyled">
@@ -87,7 +97,9 @@
                                 <li>Integrated ad Companies</li>
                             </ul>
                         </div>
-                        <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6 text-xs-center">
+                        <div class="column-wrapper">
                             <i class="ion-ios-cart-outline"></i>
                             <h4>e-commerce</h4>
                             <ul class="list-unstyled">
@@ -97,7 +109,9 @@
                                 <li>Quality testing</li>
                             </ul>
                         </div>
-                        <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6 text-xs-center">
+                        <div class="column-wrapper">
                             <i class="ion-ios-settings"></i>
                             <h4>CUSTOMIZABLE DESIGN</h4>
                             <ul class="list-unstyled">
@@ -109,97 +123,124 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-md-offset-1 hidden-xs hidden-sm">
-                    <img class="img-responsive" src="img/about.jpg" alt="">
-                </div>
             </div>
-        </section>
-
-        <section id="portfolio" class="container-fluid max-width">
-            <div class="header-container">
-                <h2 class="green-underline">our portfolio</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col-md-5 col-md-offset-1 hidden-xs hidden-sm">
+                <img class="img-responsive" src="img/about.jpg" alt="">
             </div>
+        </div>
+    </section>
 
-            <div class="row">
-                <div class="col-sm-2">
-                    <h2>choose category</h2>
+    <section id="portfolio" class="container-fluid max-width">
+        <div class="header-container">
+            <h2 class="green-underline">our portfolio</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-2 col-sm-3">
+                <div class="wrapper">
+                    <h3>choose category</h3>
                     <ul class="filter-menu list-unstyled">
-                        <li class="active"><span>All</span></li>
-                        <li><span>webdesign</span></li>
-                        <li><span>graphic design</span></li>
-                        <li><span>fashion</span></li>
-                        <li><span>Logo design</span></li>
-                        <li><span>Advertising</span></li>
+                        <li class="active"><a href="#" data-filter="*">All</a></li>
+                        <li><a href="#" data-filter=".webdesign">webdesign</a></li>
+                        <li><a href="#" data-filter=".graphic">graphic design</a></li>
+                        <li><a href="#" data-filter=".fashion">fashion</a></li>
+                        <li><a href="#" data-filter=".logo">Logo design</a></li>
+                        <li><a href="#" data-filter=".advertisement">Advertising</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-10">
-                    <img src="img/Layer_5.jpg" alt="">
-                    <img src="img/Layer_6.jpg" alt="">
-                    <img src="img/Layer_7.jpg" alt="">
-                    <img src="img/Layer_8.jpg" alt="">
-                    <img src="img/Layer_9.jpg" alt="">
-                    <img src="img/Layer_10.jpg" alt="">
-                    <img src="img/Layer_11.jpg" alt="">
-                    <img src="img/Layer_14.jpg" alt="">
-                    <img src="img/Layer_13.jpg" alt="">
-                </div>
             </div>
-        </section>
-        <section id="contact">
-            <div class="container-fluid max-width">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h2 class="text-inverse">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h2>
-                        <button class="btn btn-green btn-inverse">Get in touch</button>
+            <div class="col-lg-10 col-sm-9">
+                <div class="isotope-grid">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item webdesign graphic">
+                        <img class="img-responsive" src="img/Layer_5.jpg" alt="">
                     </div>
-                    <div class="col-sm-6">
-                        <div class="white-bg">
-                            <h3>STAY INFORMED WITH OUR NEWSLETTER</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.
-                            </p>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="YOUR EMAIL">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-green" type="button">Send</button>
-                                </span>
-                            </div><!-- /input-group -->
-                        </div>
+                    <div class="grid-item graphic">
+                        <img class="img-responsive" src="img/Layer_6.jpg" alt="">
+                    </div>
+                    <div class="grid-item logo advertisement">
+                        <img class="img-responsive" src="img/Layer_7.jpg" alt="">
+                    </div>
+                    <div class="grid-item fashion advertisement">
+                        <img class="img-responsive" src="img/Layer_8.jpg" alt="">
+                    </div>
+                    <div class="grid-item advertisement">
+                        <img class="img-responsive" src="img/Layer_9.jpg" alt="">
+                    </div>
+                    <div class="grid-item fashion logo">
+                        <img class="img-responsive" src="img/Layer_10.jpg" alt="">
+                    </div>
+                    <div class="grid-item advertisement">
+                        <img class="img-responsive" src="img/Layer_11.jpg" alt="">
+                    </div>
+                    <div class="grid-item advertisement">
+                        <img class="img-responsive" src="img/Layer_13.jpg" alt="">
+                    </div>
+                    <div class="grid-item fashion">
+                        <img class="img-responsive" src="img/Layer_14.jpg" alt="">
                     </div>
                 </div>
             </div>
-        </section>
-        <footer class="container-fluid max-width">
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container-fluid max-width">
             <div class="row">
-                <div class="col-sm-7">
-                    <ul class="list-inline bottom-menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">contact us</a></li>
-                    </ul>
+                <div class="col-sm-6">
+                    <h2 class="text-inverse">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h2>
+                    <button class="btn btn-green btn-inverse">Get in touch</button>
                 </div>
-                <div class="col-sm-5 text-right">
-                    <p>Created by akhouad 2016. All Rights Reserved</p>
+                <div class="col-sm-6">
+                    <div class="white-bg">
+                        <h3>STAY INFORMED WITH OUR NEWSLETTER</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="YOUR EMAIL">
+                            <span class="input-group-btn">
+                                <button class="btn btn-green" type="button">Send</button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div>
                 </div>
             </div>
-            <div class="clearfix">
-                <ul class="list-inline pull-right">
-                    <li><a href="#" target="_blank"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="ion-social-youtube"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="ion-social-pinterest"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="ion-social-instagram"></i></a></li>
+        </div>
+    </section>
+
+    <footer class="container-fluid max-width">
+        <div class="row">
+            <div class="col-sm-7">
+                <ul class="list-inline bottom-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact us</a></li>
                 </ul>
             </div>
-        </footer>
-    <input type="file" name="file" maxlength="1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+            <div class="col-sm-5">
+                <p class="created">Created by akhouad 2016. All Rights Reserved</p>
+            </div>
+        </div>
+        <div class="clearfix">
+            <ul class="list-inline pull-right">
+                <li><a href="#" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ion-social-youtube"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ion-social-pinterest"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ion-social-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
