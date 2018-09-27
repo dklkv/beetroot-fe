@@ -18,7 +18,7 @@ h1, h2, h3, h4, button, .navbar-brand {
     color: white;
     background-color: #7bedc7;
     border-radius: 0;
-    padding: 14px 40px;
+    padding: 12px 40px;
 }
 
 .btn-inverse {
@@ -40,14 +40,6 @@ h1, h2, h3, h4, button, .navbar-brand {
     color: white;
 }
 
-.img-responsive {
-    margin: 0 auto;
-}
-
-.relative {
-    position: relative;
-}
-
 .green-underline {
     position: relative;
     z-index: 0;
@@ -67,7 +59,7 @@ h1, h2, h3, h4, button, .navbar-brand {
 
 h2 {
     display: inline-block;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .header-container {
@@ -80,7 +72,7 @@ h2 {
 .header-container p {
     margin: 0 auto;
     max-width: 720px;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #60606e;
 }
 
@@ -90,8 +82,7 @@ header {
 }
 
 header p {
-    font-size: 16px;
-    line-height: 30px;
+    line-height: 1.875;
 }
 
 header .img-wrapper {
@@ -119,14 +110,14 @@ header .img-wrapper img{
 }
 .header-wrapper p:first-child {
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 0;
     padding: 2px 14px;
     background-color: #7bedc7;
 }
 
 .header-wrapper h1 {
-    font-size: 48px;
+    font-size: 3rem;
     margin: 0 0 20px;
     padding: 14px 0;
     border: 10px solid #60606e;
@@ -134,23 +125,20 @@ header .img-wrapper img{
 
 .header-wrapper p:last-of-type {
     font-weight: normal;
-    font-size: 16px;
 }
 
 
 header .btn-wrapper{
-    margin-top: 22px;
-    margin-bottom: -25px;
     text-align: right;
+}
+header .btn-wrapper .btn{
+    margin-bottom: -15%;
 }
 
 #chooseUs {
     padding-top: 220px;
 }
-#chooseUs .column-wrapper {
-    display: inline-block;
-    text-align: left;
-}
+
 #chooseUs i {
     font-size: 36px;
 }
@@ -160,8 +148,8 @@ header .btn-wrapper{
 #chooseUs li {
     color: #999;
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 0.875rem;
+    line-height: 1.875rem;
 }
 
 #portfolio {
@@ -173,8 +161,8 @@ header .btn-wrapper{
 #portfolio h3 {
     margin-top: 0;
     margin-bottom: 25px;
-    font-size: 30px;
-    line-height: 48px;
+    font-size: 1.875rem;
+    line-height: 3rem;
 }
 
 #portfolio .filter-menu li {
@@ -182,7 +170,7 @@ header .btn-wrapper{
 }
 #portfolio .filter-menu li a {
     display: inline-block;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-transform: uppercase;
     padding: 5px 15px;
 }
@@ -196,6 +184,7 @@ header .btn-wrapper{
     width: calc(33% - 15px);
 }
 #portfolio .grid-item {
+    text-align: center;
     padding-bottom: 30px;
 }
 
@@ -205,13 +194,13 @@ header .btn-wrapper{
 }
 
 #contact h2 {
-    line-height: 48px;
+    line-height: 3rem;
 }
 
 #contact h3 {
     margin-bottom: 5px;
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
     max-width: 400px;
 }
 #contact p {
@@ -259,11 +248,7 @@ footer .bottom-menu li:last-of-type:after {
 }
 
 footer i {
-    font-size: 18px;
-}
-
-footer p.created {
-    text-align: right;
+    font-size: 1.125rem;
 }
 
 @media all and (max-width:991px) {
@@ -281,23 +266,8 @@ footer p.created {
 }
 
 @media all and (max-width: 767px) {
-    #chooseUs .text-xs-center {
-        text-align: center;
-    }
-
-    #chooseUs .column-wrapper {
-        text-align: center;
-    }
 
     #portfolio .filter-menu li {
         display: inline-block;
-    }
-    
-    footer .bottom-menu {
-        text-align: center;
-    }
-
-    footer p.created {
-        text-align: center;
     }
 }
