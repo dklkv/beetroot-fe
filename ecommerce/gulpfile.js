@@ -1,14 +1,11 @@
-var gulp = require('gulp'),
+let gulp = require('gulp'),
     minify = require('gulp-clean-css'),
     sass = require('gulp-sass'),
     rename = require('gulp-rename'),
     notify = require('gulp-notify'),
     uglify = require('gulp-uglify'),
-    watch = require('gulp-watch'),
     imagemin = require('gulp-imagemin'),
     bs = require('browser-sync').create();
-    
-gulp.task('default', ['browsersync', 'watch']);
 
 gulp.task('browsersync', function () {
     bs.init({
@@ -18,8 +15,8 @@ gulp.task('browsersync', function () {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('src/sass/**/*.scss', ['style']);
-    gulp.watch('src/js/script.js', ['script']);
+    gulp.watch('src/**/*.scss', gulp.series('style'));
+    gulp.watch('src/js/script.js', gulp.series('script'));
     bs.watch('*.html').on('change', bs.reload);
 });
 
@@ -30,7 +27,7 @@ gulp.task('style', function() {
             .pipe(minify())
             .pipe(gulp.dest('css/'))
             .pipe(notify({message: 'Style task is finished'}))
-            .pipe(bs.reload({stream: true}));;
+            .pipe(bs.reload({stream: true}));
 });
 
 gulp.task('script', function() {
@@ -47,3 +44,5 @@ gulp.task('imagemin', function() {
         .pipe(imagemin())
         .pipe(gulp.dest('img/'));
 });
+
+gulp.task('default', gulp.parallel('browsersync', 'watch'));

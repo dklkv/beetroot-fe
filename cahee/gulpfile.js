@@ -1,14 +1,12 @@
-var gulp = require('gulp'),
+let gulp = require('gulp'),
     minify = require('gulp-clean-css'),
     sass = require('gulp-sass'),
     rename = require('gulp-rename'),
     notify = require('gulp-notify'),
     // uglify = require('gulp-uglify'),
-    watch = require('gulp-watch'),
     imagemin = require('gulp-imagemin'),
     bs = require('browser-sync').create();
 
-gulp.task('default', ['browsersync', 'watch']);
 
 gulp.task('browsersync', function () {
     bs.init({
@@ -18,8 +16,8 @@ gulp.task('browsersync', function () {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('sass/**/*.scss', ['style']);
-    // gulp.watch('src/js/script.js', ['script']);
+    gulp.watch('sass/**/*.scss', gulp.series('style'));
+    // gulp.watch('src/js/script.js', gulp.series('script'));
     bs.watch('*.html').on('change', bs.reload);
 });
 
@@ -47,3 +45,5 @@ gulp.task('imagemin', function() {
         .pipe(imagemin())
         .pipe(gulp.dest('img/'));
 });
+
+gulp.task('default', gulp.parallel('browsersync', 'watch'));
